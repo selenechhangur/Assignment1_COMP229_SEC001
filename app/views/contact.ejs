@@ -1,0 +1,90 @@
+<!-- Selene Chhangur - 300742304 - Summer 2023 - COMP 229 - Web App Development -->
+
+<%- include ('partials/header.ejs') %> <%- include ('partials/main_nav.ejs') %>
+
+<main class="container">
+  <div class="jumbotron">
+    <h1 class="display-4"><%= title %> page</h1>
+  </div>
+
+  <body>
+    <br />
+    <div class="content">
+      <h3>Contact Me:</h3>
+      <form action="mailto:schhangu@my.centennialcollege.ca" method="post">
+        <table>
+          <tr>
+            <td><br /><b>Name</b></td>
+          </tr>
+          <tr>
+            <td>
+              <input type="text" name="fname" placeholder="John" tabindex="1" />
+              <br /><small>First name</small>
+            </td>
+            <td>
+              <input
+                type="text"
+                name="lname"
+                placeholder="Smith"
+                tabindex="2"
+              />
+              <br /><small>Last name</small>
+            </td>
+          </tr>
+          <tr>
+            <td><br /><b>Email</b></td>
+            <td><br /><b>Contact Number</b></td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="email"
+                name="email"
+                placeholder="johnsmith@email.com"
+                tabindex="3"
+              />
+            </td>
+            <td>
+              <input
+                type="tel"
+                name="phone"
+                placeholder="123-456-7890"
+                tabindex="4"
+              />
+            </td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td><br /><b>Message:</b></td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td>
+              <textarea
+                name="message"
+                tabindex="5"
+                placeholder="(Optional)"
+                cols="50"
+                rows="5"
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="submit" value="Submit" tabindex="6" />
+              <input type="reset" value="Clear Form" tabindex="7" />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</main>
+
+<!--bottom nav-->
+
+<!--script section-->
+<%- include ('partials/bottom_nav.ejs') %> <%- include ('partials/footer.ejs')
+%>

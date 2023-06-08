@@ -1,0 +1,57 @@
+    <!-- Selene Chhangur - 300742304 - Summer 2023 - COMP 229 - Web App Development -->
+
+<%- include ('partials/header.ejs') %> <%- include ('partials/main_nav.ejs') %>
+
+<main class="container">
+  <div class="jumbotron">
+    <h1 class="display-4"><%= title %> page</h1>
+  </div>
+  <style>
+    #allPage {
+      font-family: Arial, sans-serif;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+    #pic {
+      width: 200px;
+      height: auto;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="allPage">
+    <br>
+  <img id="pic" src="/img/picture.png" alt="Me">
+  <p>
+    Hello, my name is Selene Chhangur and I am currently a student at Centennial College pursuing a diploma in Software Engineering - Technician.
+  </p>
+  <p>
+    I previously attended Centennial College for "Office Administrative - Executive" and after some time working in my previous field I decided to come back and further my studies in something
+    that is new and exciting to me. I've always been interested in computers and technology and figured I should take that leap and dive into something new.
+    From what I will learn in this program, I hope that it will help me make a positive impact in the world.
+  </p>
+  <p>
+    Apart from programming, I have a very large interest in video games. I've loved gaming since I was very young and I believe it was one of the reasons I became interested in computers and software. 
+    I love exploring open world games, trying different game genres, and even analyzing game mechanics. 
+    Video games provide a source of inspiration and creativity for me and has fuels my imagination and inspires me to learn programming to a higher degree.
+  </p>
+  <p>
+    Another one of my passions is music and I find solace and motivation in various genres of music. Whether I'm listening to music while coding or singing along to my favourite 
+    songs while I work, music always plays an important role in my life.
+  </p>
+
+  <h4>Resume: </h4>
+  <a href="/assets/Resume.PDF"><i class="fa-solid fa-file" style="color: #b8b1b5"></i> Download PDF</a>
+  <p></p>
+</div>
+</body>
+</main>
+
+<!--bottom nav-->
+
+<!--script section-->
+<%- include ('partials/bottom_nav.ejs') %> <%- include ('partials/footer.ejs')
+%>

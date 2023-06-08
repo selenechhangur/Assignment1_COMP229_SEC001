@@ -1,0 +1,58 @@
+    <!-- Selene Chhangur - 300742304 - Summer 2023 - COMP 229 - Web App Development -->
+
+<%- include ('partials/header.ejs') %> <%- include ('partials/main_nav.ejs') %>
+
+<main class="container">
+  <div class="jumbotron">
+    <h1 class="display-4"><%= title %> page</h1>
+  </div>
+  <style>
+    ul {
+      list-style-type: disc;
+      margin-bottom: 10px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    .service-image {
+      max-width: 50px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <br>
+  <h4>What I offer:</h4>
+  <p>As a software engineering technician, I offer the following services:</p>
+  <ul>
+    <li>
+      <img src="img/html.png" alt="HTML" class="service-image">
+      HTML web development: Creating modern and responsive websites using HTML5, CSS, and Bootstrap.
+    </li>
+    <li>
+      <img src="img/javascript.png" alt="JavaScript" class="service-image">
+      JavaScript development: Building interactive and dynamic web applications with JavaScript frameworks like React and Angular.
+    </li>
+    <li>
+      <img src="img/csharp.png" alt="C#" class="service-image">
+      C# programming: Developing robust and scalable software solutions using the C# programming language and .NET framework.
+    </li>
+    <li>
+      <img src="img/java.png" alt="Java" class="service-image">
+      Java programming: Designing and implementing Java applications, including desktop, web, and mobile applications.
+    </li>
+    <li>
+      <img src="img/srs.png" alt="Software Design" class="service-image">
+      Software designing: Creating detailed Software Requirement Specifications (SRS) documents to capture client needs and guide the software development process.
+    </li>
+  </ul>
+  <p>Feel free to reach out to discuss your specific software needs and how I can assist you.</p>
+</body>
+</main>
+
+<!--bottom nav-->
+
+<!--script section-->
+<%- include ('partials/bottom_nav.ejs') %> <%- include ('partials/footer.ejs')
+%>

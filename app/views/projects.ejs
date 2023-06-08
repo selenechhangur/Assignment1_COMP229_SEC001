@@ -1,0 +1,64 @@
+    <!-- Selene Chhangur - 300742304 - Summer 2023 - COMP 229 - Web App Development -->
+
+<%- include ('partials/header.ejs') %> <%- include ('partials/main_nav.ejs') %>
+
+<main class="container">
+  <div class="jumbotron">
+    <h1 class="display-4"><%= title %> page</h1>
+  </div>
+  <br>
+  <h5>Currently, I do not have any present projects to display, but these are the courses I am currently taking in my program.</h5>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    .center {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <br>
+  <table>
+    <tr>
+      <th></th>
+      <th>Day 1</th>
+      <th>Day 2</th>
+      <th>Day 3</th>
+    </tr>
+    <tr>
+      <td class="center">8:30 AM - 11:20 AM</td>
+      <td class="center">ENGL 253 - Advanced Business Communications</td>
+      <td class="center">COMP 246 - Software Systems Design</td>
+      <td class="center">COMP 229 - Web App Development</td>
+    </tr>
+    <tr>
+      <td class="center">12:30 PM - 2:20 PM</td>
+      <td class="center">COMP 246 - Software Systems Design</td>
+      <td class="center">COMP 228 - Java Programming</td>
+      <td class="center">COMP 214 - Advanced Database Concepts</td>
+    </tr>
+    <tr>
+      <td class="center">2:30 PM - 4:20 PM</td>
+      <td class="center">COMP 229 - Web App Development</td>
+      <td class="center">COMP 214 - Advanced Database Concepts</td>
+      <td class="center">COMP 228 - Java Programming</td>
+    </tr>
+  </table>
+</body>
+</main>
+
+<!--bottom nav-->
+
+<!--script section-->
+<%- include ('partials/bottom_nav.ejs') %> <%- include ('partials/footer.ejs')
+%>

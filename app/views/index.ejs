@@ -1,0 +1,56 @@
+    <!-- Selene Chhangur - 300742304 - Summer 2023 - COMP 229 - Web App Development -->
+
+<%- include ('partials/header.ejs') %> <%- include ('partials/main_nav.ejs') %>
+
+<main class="container">
+  <div class="jumbotron">
+    <h1 class="display-4"><%= title %> page</h1>
+  </div>
+  <style>
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+    #title {
+      font-size: 15px;
+    }
+    #pic {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+      }
+  </style>
+</head>
+<body>
+  <img id="pic" src="/img/picture.png" alt="Me">
+  <br>
+  <h1 class="title">Welcome to my Software Engineering Journey</h1>
+  <p>
+    <h3>Mission Statement:</h3>
+  </p>
+  <p>
+    My mission as a Software Engineering - Technician student is to acquire a comprehensive understanding of software development principles, methodologies, and technologies. 
+    I am dedicated to honing my technical skills and cultivating a deep passion for problem-solving and innovation in the field of software engineering.
+  </p>
+  <p>
+    Through rigorous learning, hands-on projects, and collaboration with peers I strive to develop a strong foundation in software development. My mission is to apply 
+    my knowledge to create efficient, reliable, and user-centric software solutions that address real-world challenges.
+  </p>
+  <p>
+    I am committed to continuous learning, staying up-to-date with emerging technologies, and adapting to the evolution of the industry. My mission is to become 
+    a skilled and adaptable professional, ready to contribute to the development of exciting software applications and make a positive impact in the world of technology.
+  </p>
+  <p>
+    With integrity and a mindset for growth, I aim to pursue excellence in my studies, continuously improve my skills, and contribute to the advancement of software engineering. 
+  </p>
+</main>
+
+<!--bottom nav-->
+
+<!--script section-->
+<%- include ('partials/bottom_nav.ejs') %> <%- include ('partials/footer.ejs')
+%>
