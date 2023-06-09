@@ -1,8 +1,12 @@
-    <!-- Selene Chhangur - 300742304 - Summer 2023 - COMP 229 - Web App Development -->
+    <!-- Sudent Name: Selene Chhangur 
+      - Student ID: 300742304 
+      - File Name: services.ejs 
+      - Date: June 9, 2023 
+      - COMP 229 Web Application Development -->
 
 <%- include ('partials/header.ejs') %> <%- include ('partials/main_nav.ejs') %>
 
-<main class="container">
+<main class="container" style="margin: 0 auto; max-width: 900px">
   <div class="jumbotron">
     <h1 class="display-4"><%= title %> </h1>
   </div>
@@ -15,7 +19,8 @@
       margin-bottom: 10px;
     }
     .service-image {
-      max-width: 50px;
+      width: 50px;
+      height: 50px;
       height: auto;
       margin-bottom: 10px;
     }
@@ -25,28 +30,48 @@
   <br>
   <h4>What I offer:</h4>
   <p>As a software engineering technician, I offer the following services:</p>
-  <ul>
-    <li>
-      <img src="img/html.png" alt="HTML" class="service-image">
-      HTML web development: Creating modern and responsive websites using HTML5, CSS, and Bootstrap.
-    </li>
-    <li>
-      <img src="img/javascript.png" alt="JavaScript" class="service-image">
-      JavaScript development: Currently studying how to build interactive and dynamic web applications with JavaScript frameworks like Angular.
-    </li>
-    <li>
-      <img src="img/csharp.png" alt="C#" class="service-image">
-      C# programming: Developing software solutions using the C# programming language and .NET framework.
-    </li>
-    <li>
-      <img src="img/java.png" alt="Java" class="service-image">
-      Java programming: Currently studying how to design and implement Java applications, including desktop and web applications.
-    </li>
-    <li>
-      <img src="img/srs.png" alt="Software Design" class="service-image">
-      Software designing: Creating detailed Software Requirement Specifications (SRS) documents to capture client needs and guide the software development process.
-    </li>
-  </ul>
+  <table>
+    <tr>
+      <td>
+        <img src="img/html.png" alt="HTML" class="service-image">
+      </td>
+      <td>
+        HTML web development: Creating modern and responsive websites using HTML5, CSS, and Bootstrap.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="img/javascript.png" alt="JavaScript" class="service-image">
+      </td>
+      <td>
+        JavaScript development: Currently studying how to build interactive and dynamic web applications with JavaScript frameworks like Angular.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="img/csharp.png" alt="C#" class="service-image">
+      </td>
+      <td>
+        C# programming: Developing software solutions using the C# programming language and .NET framework.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="img/java.png" alt="Java" class="service-image">
+      </td>
+      <td>
+        Java programming: Currently studying how to design and implement Java applications, including desktop and web applications.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="img/srs.png" alt="Software Design" class="service-image">
+      </td>
+      <td>
+        Software designing: Creating detailed Software Requirement Specifications (SRS) documents to capture client needs and guide the software development process.
+      </td>
+    </tr>
+  </table>
   <p>Feel free to reach out to discuss your specific software needs and how I can assist you.</p>
 </body>
 </main>

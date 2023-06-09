@@ -1,14 +1,20 @@
-    <!-- Selene Chhangur - 300742304 - Summer 2023 - COMP 229 - Web App Development -->
+    <!-- Sudent Name: Selene Chhangur 
+      - Student ID: 300742304 
+      - File Name: about.ejs 
+      - Date: June 9, 2023 
+      - COMP 229 Web Application Development -->
 
 <%- include ('partials/header.ejs') %> <%- include ('partials/main_nav.ejs') %>
 
-<main class="container">
+<main class="container" style="margin: 0 auto; max-width: 900px">
   <div class="jumbotron">
     <h1 class="display-4"><%= title %> </h1>
   </div>
   <style>
     #allPage {
       font-family: Arial, sans-serif;
+      margin: 0 auto; /* Added to horizontally center the content */
+      max-width: 900px; /* Added to limit the width of the content */
     }
     p {
       margin-bottom: 20px;

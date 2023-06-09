@@ -1,8 +1,12 @@
-<!-- Selene Chhangur - 300742304 - Summer 2023 - COMP 229 - Web App Development -->
+<!-- Sudent Name: Selene Chhangur 
+      - Student ID: 300742304 
+      - File Name: contact.ejs 
+      - Date: June 9, 2023 
+      - COMP 229 Web Application Development -->
 
 <%- include ('partials/header.ejs') %> <%- include ('partials/main_nav.ejs') %>
 
-<main class="container">
+<main class="container" style="margin: 0 auto; max-width: 900px">
   <div class="jumbotron">
     <h1 class="display-4"><%= title %></h1>
   </div>
@@ -12,82 +16,75 @@
     <div class="content">
       <h3>Contact Me:</h3>
       <form action="mailto:schhangu@my.centennialcollege.ca" method="post">
-        <table>
-          <tr>
-            <td><br /><b>Full Name</b></td>
-          </tr>
-          <tr>
-            <td>
-              <input
-                type="text"
-                name="fname"
-                placeholder="First Name"
-                tabindex="1"
-              />
-            </td>
-            <td>
-              <input
-                type="text"
-                name="lname"
-                placeholder="Last Name"
-                tabindex="2"
-              />
-            </td>
-          </tr>
-          <tr>
-            <td><br /><b>Email</b></td>
-            <td><br /><b>Contact Number</b></td>
-          </tr>
-          <tr>
-            <td>
-              <input
-                type="email"
-                name="email"
-                placeholder="name@email.com"
-                tabindex="3"
-              />
-            </td>
-            <td>
-              <input
-                type="tel"
-                name="phone"
-                placeholder="123-456-7890"
-                tabindex="4"
-              />
-            </td>
-          </tr>
-        </table>
-        <table>
-          <tr>
-            <td><br /><b>Message:</b></td>
-          </tr>
-        </table>
-        <table>
-          <tr>
-            <td>
-              <textarea
-                name="message"
-                tabindex="5"
-                placeholder="(Optional)"
-                cols="50"
-                rows="5"
-              ></textarea>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <input type="submit" value="Submit" tabindex="6" />
-              <input type="reset" value="Clear Form" tabindex="7" />
-            </td>
-          </tr>
-        </table>
+        <div style="display: flex; flex-wrap: wrap; gap: 10px">
+          <div style="flex-basis: 50%">
+            <label for="fname"><b>First Name</b></label>
+            <input
+              type="text"
+              name="fname"
+              id="fname"
+              placeholder="First Name"
+              tabindex="1"
+              style="width: 100%"
+            />
+          </div>
+          <div style="flex-basis: 50%">
+            <label for="lname"><b>Last Name</b></label>
+            <input
+              type="text"
+              name="lname"
+              id="lname"
+              placeholder="Last Name"
+              tabindex="2"
+              style="width: 100%"
+            />
+          </div>
+          <div style="flex-basis: 50%">
+            <label for="email"><b>Email</b></label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="name@email.com"
+              tabindex="3"
+              style="width: 100%"
+            />
+          </div>
+          <div style="flex-basis: 50%">
+            <label for="phone"><b>Contact Number</b></label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="123-456-7890"
+              tabindex="4"
+              style="width: 100%"
+            />
+          </div>
+          <div style="flex-basis: 100%">
+            <label for="message"><b>Message:</b></label>
+            <textarea
+              name="message"
+              id="message"
+              tabindex="5"
+              placeholder="(Optional)"
+              cols="25"
+              rows="5"
+              style="width: 100%"
+            ></textarea>
+          </div>
+          <div style="flex-basis: 100%">
+            <input type="submit" value="Submit" tabindex="6" />
+            <input type="reset" value="Clear Form" tabindex="7" />
+          </div>
+        </div>
       </form>
     </div>
   </body>
+
+  <!--bottom nav-->
+
+  <!--script section-->
+  <%- include ('partials/bottom_nav.ejs') %> <%- include ('partials/footer.ejs')
+  %>
 </main>
-
-<!--bottom nav-->
-
-<!--script section-->
-<%- include ('partials/bottom_nav.ejs') %> <%- include ('partials/footer.ejs')
-%>
