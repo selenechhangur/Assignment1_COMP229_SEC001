@@ -4,7 +4,7 @@
 
 <main class="container">
   <div class="jumbotron">
-    <h1 class="display-4"><%= title %> page</h1>
+    <h1 class="display-4"><%= title %></h1>
   </div>
 
   <body>
@@ -14,21 +14,24 @@
       <form action="mailto:schhangu@my.centennialcollege.ca" method="post">
         <table>
           <tr>
-            <td><br /><b>Name</b></td>
+            <td><br /><b>Full Name</b></td>
           </tr>
           <tr>
             <td>
-              <input type="text" name="fname" placeholder="John" tabindex="1" />
-              <br /><small>First name</small>
+              <input
+                type="text"
+                name="fname"
+                placeholder="First Name"
+                tabindex="1"
+              />
             </td>
             <td>
               <input
                 type="text"
                 name="lname"
-                placeholder="Smith"
+                placeholder="Last Name"
                 tabindex="2"
               />
-              <br /><small>Last name</small>
             </td>
           </tr>
           <tr>
@@ -40,7 +43,7 @@
               <input
                 type="email"
                 name="email"
-                placeholder="johnsmith@email.com"
+                placeholder="name@email.com"
                 tabindex="3"
               />
             </td>
