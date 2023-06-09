@@ -1,16 +1,2 @@
-html,
-body {
-  height: 100%;
-  margin: 0;
-}
-body {
-  display: flex;
-  flex-direction: column;
-}
 
-#pic {
-  width: 200px;
-  height: auto;
-  border-radius: 50%;
-  margin-bottom: 20px;
-}
+
